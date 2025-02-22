@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Lección 4: Conversión de Tipos - Curso Maestro de JavaScript
+        </title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../../css/main.css" />
+        <link rel="stylesheet" href="../../css/lecciones.css" />
+        <link rel="stylesheet" href="../../css/responsive-lecciones.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/theme/dracula.min.css"
+        />
+    </head>
+    <body>
+        <!-- Header de la lección -->
+        <header class="lesson-header">
+            <div class="header-content">
+                <h1 class="lesson-title">
+                    <i class="fab fa-js"></i> Lección 4: Conversión de Tipos
+                </h1>
+                <div class="lesson-navigation">
+                    <a href="3-tipos-primitivos.html" class="nav-button">
+                        <i class="fas fa-arrow-left"></i> Lección Anterior
+                    </a>
+                    <a
+                        href="5-operadores-basicos.html"
+                        class="nav-button"
+                        id="next-lesson-btn"
+                    >
+                        Siguiente Lección <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="../../index.html" class="nav-button">
+                        <i class="fas fa-home"></i> Volver al Inicio
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contenido principal de la lección -->
+        <main class="lesson-content">
+            <section class="theory-section">
+                <h2>Introducción a la Conversión de Tipos</h2>
+                <p>
+                    En JavaScript, la conversión de tipos (también llamada
+                    coerción) es el proceso de convertir un valor de un tipo a
+                    otro. Esto puede ocurrir de manera implícita
+                    (automáticamente) o explícita (manualmente).
+                </p>
+                <h3>Coerción Implícita</h3>
+                <p>
+                    La coerción implícita ocurre cuando JavaScript convierte
+                    automáticamente un tipo de dato en otro. Por ejemplo:
+                </p>
+                <pre id="code-example">
+let numero = 42;
+let texto = "El número es " + numero; // Coerción implícita de número a string
+console.log(texto); // "El número es 42"
+            </pre
+                >
+
+                <h3>Coerción Explícita</h3>
+                <p>
+                    La coerción explícita ocurre cuando el programador convierte
+                    manualmente un tipo de dato en otro. Por ejemplo:
+                </p>
+                <pre id="code-example">
+let texto = "123";
+let numero = Number(texto); // Coerción explícita de string a número
+console.log(numero); // 123
+            </pre
+                >
+
+                <h3>Métodos de Conversión</h3>
+                <ul>
+                    <li>
+                        <strong><code>Number()</code>:</strong> Convierte un
+                        valor a número.
+                    </li>
+                    <li>
+                        <strong><code>String()</code>:</strong> Convierte un
+                        valor a cadena de texto.
+                    </li>
+                    <li>
+                        <strong><code>Boolean()</code>:</strong> Convierte un
+                        valor a booleano.
+                    </li>
+                    <li>
+                        <strong
+                            ><code>parseInt()</code> y
+                            <code>parseFloat()</code>:</strong
+                        >
+                        Convierten cadenas a números enteros o decimales.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Editor de código interactivo -->
+            <section class="practice-section">
+                <h2>Practica lo que aprendiste</h2>
+                <div class="code-editor-container">
+                    <textarea id="code-editor"></textarea>
+                </div>
+                <button class="run-code-btn" id="run-code-btn">
+                    <i class="fas fa-play"></i> Ejecutar Código
+                </button>
+                <div class="output-container">
+                    <h3>Resultado:</h3>
+                    <pre id="output"></pre>
+                </div>
+            </section>
+            <!-- Botón "Finalizar Lección" -->
+            <div class="finish-lesson-container">
+                <button class="finish-lesson-btn" id="finish-lesson-btn">
+                    <i class="fas fa-check"></i> Finalizar Lección
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer de la lección -->
+        <footer class="lesson-footer">
+            <p>
+                © 2023 Curso Maestro de JavaScript. Todos los derechos
+                reservados.
+            </p>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/mode/javascript/javascript.min.js"></script>
+        <script src="../../js/codeMirror.js"></script>
+        <script src="../../js/lecciones/modulo1/leccion4.js"></script>
+    </body>
+</html>

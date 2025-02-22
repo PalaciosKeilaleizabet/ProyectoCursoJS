@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Lección 5: Operadores Básicos - Curso Maestro de JavaScript
+        </title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../../css/main.css" />
+        <link rel="stylesheet" href="../../css/lecciones.css" />
+        <link rel="stylesheet" href="../../css/responsive-lecciones.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/theme/dracula.min.css"
+        />
+    </head>
+    <body>
+        <!-- Header de la lección -->
+        <header class="lesson-header">
+            <div class="header-content">
+                <h1 class="lesson-title">
+                    <i class="fab fa-js"></i> Lección 5: Operadores Básicos
+                </h1>
+                <div class="lesson-navigation">
+                    <a href="4-conversion-tipos.html" class="nav-button">
+                        <i class="fas fa-arrow-left"></i> Lección Anterior
+                    </a>
+                    <button class="nav-button" id="finish-module-btn">
+                        <i class="fas fa-check"></i> Terminar Módulo
+                    </button>
+                    <a href="../../index.html" class="nav-button">
+                        <i class="fas fa-home"></i> Volver al Inicio
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contenido principal de la lección -->
+        <main class="lesson-content">
+            <section class="theory-section">
+                <h2>Introducción a los Operadores Básicos</h2>
+                <p>
+                    Los operadores en JavaScript son símbolos que permiten
+                    realizar operaciones sobre valores y variables. En esta
+                    lección, aprenderás sobre los operadores aritméticos, de
+                    asignación y de comparación.
+                </p>
+
+                <h3>Operadores Aritméticos</h3>
+                <p>
+                    Los operadores aritméticos se utilizan para realizar
+                    operaciones matemáticas:
+                </p>
+                <pre id="code-example">
+let a = 10;
+let b = 5;
+
+console.log(a + b); // Suma: 15
+console.log(a - b); // Resta: 5
+console.log(a * b); // Multiplicación: 50
+console.log(a / b); // División: 2
+console.log(a % b); // Módulo (resto de la división): 0
+console.log(a ** b); // Exponenciación: 100000
+            </pre
+                >
+
+                <h3>Operadores de Asignación</h3>
+                <p>
+                    Los operadores de asignación se utilizan para asignar
+                    valores a las variables:
+                </p>
+                <pre id="code-example">
+let x = 10;
+x += 5; // Equivalente a x = x + 5
+console.log(x); // 15
+
+x -= 3; // Equivalente a x = x - 3
+console.log(x); // 12
+
+x *= 2; // Equivalente a x = x * 2
+console.log(x); // 24
+
+x /= 4; // Equivalente to x = x / 4
+console.log(x); // 6
+            </pre
+                >
+
+                <h3>Operadores de Comparación</h3>
+                <p>
+                    Los operadores de comparación se utilizan para comparar
+                    valores:
+                </p>
+                <pre id="code-example">
+let num1 = 10;
+let num2 = "10";
+
+console.log(num1 == num2);  // Igualdad (true)
+console.log(num1 === num2); // Igualdad estricta (false)
+console.log(num1 != num2);  // Desigualdad (false)
+console.log(num1 !== num2); // Desigualdad estricta (true)
+console.log(num1 > num2);   // Mayor que (false)
+console.log(num1 < num2);   // Menor que (false)
+console.log(num1 >= num2);  // Mayor o igual que (true)
+console.log(num1 <= num2);  // Menor o igual que (true)
+            </pre
+                >
+            </section>
+
+            <!-- Editor de código interactivo -->
+            <section class="practice-section">
+                <h2>Practica lo que aprendiste</h2>
+                <div class="code-editor-container">
+                    <textarea id="code-editor"></textarea>
+                </div>
+                <button class="run-code-btn" id="run-code-btn">
+                    <i class="fas fa-play"></i> Ejecutar Código
+                </button>
+                <div class="output-container">
+                    <h3>Resultado:</h3>
+                    <pre id="output"></pre>
+                </div>
+            </section>
+            <!-- Botón "Finalizar Lección" -->
+            <div class="finish-lesson-container">
+                <button class="finish-lesson-btn" id="finish-lesson-btn">
+                    <i class="fas fa-check"></i> Finalizar Lección
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer de la lección -->
+        <footer class="lesson-footer">
+            <p>
+                © 2023 Curso Maestro de JavaScript. Todos los derechos
+                reservados.
+            </p>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/mode/javascript/javascript.min.js"></script>
+        <script src="../../js/codeMirror.js"></script>
+        <script src="../../js/lecciones/modulo1/leccion5.js"></script>
+    </body>
+</html>

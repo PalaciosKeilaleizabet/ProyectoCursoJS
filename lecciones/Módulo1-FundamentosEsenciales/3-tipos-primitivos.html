@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Lección 3: Tipos de Datos Primitivos - Curso Maestro de JavaScript
+        </title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../../css/main.css" />
+        <link rel="stylesheet" href="../../css/lecciones.css" />
+        <link rel="stylesheet" href="../../css/responsive-lecciones.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/theme/dracula.min.css"
+        />
+    </head>
+    <body>
+        <!-- Header de la lección -->
+        <header class="lesson-header">
+            <div class="header-content">
+                <h1 class="lesson-title">
+                    <i class="fab fa-js"></i> Lección 3: Tipos de Datos
+                    Primitivos
+                </h1>
+                <div class="lesson-navigation">
+                    <a href="2-variables.html" class="nav-button">
+                        <i class="fas fa-arrow-left"></i> Lección Anterior
+                    </a>
+                    <a
+                        href="4-conversion-tipos.html"
+                        class="nav-button"
+                        id="next-lesson-btn"
+                    >
+                        Siguiente Lección <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="../../index.html" class="nav-button">
+                        <i class="fas fa-home"></i> Volver al Inicio
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contenido principal de la lección -->
+        <main class="lesson-content">
+            <section class="theory-section">
+                <h2>Introducción a los Tipos de Datos Primitivos</h2>
+                <p>
+                    En JavaScript, los tipos de datos primitivos son valores que
+                    no son objetos y no tienen métodos. Son inmutables, lo que
+                    significa que no pueden ser modificados después de su
+                    creación.
+                </p>
+                <h3>Tipos de Datos Primitivos</h3>
+                <ul>
+                    <li>
+                        <strong><code>String</code>:</strong> Representa una
+                        cadena de texto. Ejemplo: <code>"Hola, Mundo"</code>.
+                    </li>
+                    <li>
+                        <strong><code>Number</code>:</strong> Representa un
+                        número, ya sea entero o decimal. Ejemplo:
+                        <code>42</code> o <code>3.14</code>.
+                    </li>
+                    <li>
+                        <strong><code>Boolean</code>:</strong> Representa un
+                        valor lógico: <code>true</code> o <code>false</code>.
+                    </li>
+                    <li>
+                        <strong><code>null</code>:</strong> Representa la
+                        ausencia intencional de valor.
+                    </li>
+                    <li>
+                        <strong><code>undefined</code>:</strong> Representa una
+                        variable que no ha sido asignada.
+                    </li>
+                    <li>
+                        <strong><code>Symbol</code>:</strong> Representa un
+                        valor único e inmutable, usado como identificador de
+                        propiedades de objetos.
+                    </li>
+                    <li>
+                        <strong><code>BigInt</code>:</strong> Representa números
+                        enteros de tamaño arbitrario.
+                    </li>
+                </ul>
+                <h3>Ejemplo de Código</h3>
+                <pre id="code-example">
+// Ejemplos de tipos primitivos
+let nombre = "Juan"; // String
+let edad = 25; // Number
+let esEstudiante = true; // Boolean
+let direccion = null; // null
+let telefono; // undefined (no se ha asignado un valor)
+let id = Symbol("id"); // Symbol
+let numeroGrande = 1234567890123456789012345678901234567890n; // BigInt
+
+console.log(typeof nombre); // "string"
+console.log(typeof edad); // "number"
+console.log(typeof esEstudiante); // "boolean"
+console.log(typeof direccion); // "object" (¡esto es un error conocido en JavaScript!)
+console.log(typeof telefono); // "undefined"
+console.log(typeof id); // "symbol"
+console.log(typeof numeroGrande); // "bigint"
+            </pre
+                >
+            </section>
+
+            <!-- Editor de código interactivo -->
+            <section class="practice-section">
+                <h2>Practica lo que aprendiste</h2>
+                <div class="code-editor-container">
+                    <textarea id="code-editor"></textarea>
+                </div>
+                <button class="run-code-btn" id="run-code-btn">
+                    <i class="fas fa-play"></i> Ejecutar Código
+                </button>
+                <div class="output-container">
+                    <h3>Resultado:</h3>
+                    <pre id="output"></pre>
+                </div>
+            </section>
+            <!-- Botón "Finalizar Lección" -->
+            <div class="finish-lesson-container">
+                <button class="finish-lesson-btn" id="finish-lesson-btn">
+                    <i class="fas fa-check"></i> Finalizar Lección
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer de la lección -->
+        <footer class="lesson-footer">
+            <p>
+                © 2023 Curso Maestro de JavaScript. Todos los derechos
+                reservados.
+            </p>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/mode/javascript/javascript.min.js"></script>
+        <script src="../../js/codeMirror.js"></script>
+        <script src="../../js/lecciones/modulo1/leccion3.js"></script>
+    </body>
+</html>

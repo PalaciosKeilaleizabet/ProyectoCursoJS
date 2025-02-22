@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Curso Maestro de JavaScript</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+    <body>
+        <header class="course-header">
+            <div class="header-content">
+                <h1 class="course-title">
+                    <i class="fab fa-js"></i> Curso Maestro de JavaScript
+                </h1>
+                <div class="course-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-book"></i>
+                        <span>50 Lecciones</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>15 Proyectos</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificación</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="modules-container">
+            <!-- Barra de progreso global -->
+            <div class="global-progress">
+                <div class="progress-header">
+                    <h2>Tu Progreso Global</h2>
+                    <span class="progress-percent">0% Completado</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+
+            <!-- Listado de módulos -->
+            <div class="modules-grid">
+                <!-- Módulo 1 - Desbloqueado por defecto -->
+                <article class="module-card unlocked" data-module="1">
+                    <div class="module-header">
+                        <h3 class="module-title">
+                            <i class="fas fa-key"></i> Módulo 1: Fundamentos
+                            Esenciales
+                        </h3>
+                        <span class="module-status">Disponible</span>
+                    </div>
+                    <div class="module-progress">
+                        <div class="module-progress-bar"></div>
+                        <span>0% Completado</span>
+                    </div>
+                    <a
+                        href="lecciones/modulo1-fundamentos/1-sintaxis.html"
+                        class="start-module-btn"
+                    >
+                        Comenzar Módulo <i class="fas fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <!-- Módulo 2 a 10 - Bloqueados inicialmente -->
+                <article class="module-card locked" data-module="2">
+                    <div class="module-header">
+                        <h3 class="module-title">
+                            <i class="fas fa-lock"></i> Módulo 2: Estructuras de
+                            Control
+                        </h3>
+                        <span class="module-status">Bloqueado</span>
+                    </div>
+                    <div class="module-progress">
+                        <div class="module-progress-bar"></div>
+                        <span>Completa Módulo 1 para desbloquear</span>
+                    </div>
+                </article>
+
+                <!-- Resto de módulos... (Mismo patrón para módulos 3 a 10) -->
+            </div>
+        </main>
+
+        <!-- Navegación móvil -->
+        <nav class="mobile-nav">
+            <a href="#" class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Inicio</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Progreso</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-trophy"></i>
+                <span>Logros</span>
+            </a>
+        </nav>
+
+        <!-- Scripts -->
+        <script src="js/app.js"></script>
+        <script src="js/modules.js"></script>
+    </body>
+</html>

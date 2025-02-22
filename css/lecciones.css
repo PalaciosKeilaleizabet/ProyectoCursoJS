@@ -1,0 +1,234 @@
+/* css/lecciones.css */
+
+/* Estilos generales para las lecciones */
+.lesson-header {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.lesson-title .fab {
+    font-size: 1.8rem;
+}
+
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--secondary-color);
+    color: var(--text-light);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background var(--transition-speed) ease;
+}
+
+.nav-button:hover {
+    background: #0a5a6b;
+}
+
+.nav-button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Contenido de la lección */
+.lesson-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.theory-section {
+    background: var(--text-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.theory-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.theory-section h3 {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 1rem;
+    color: var(--secondary-color);
+}
+
+.theory-section p,
+.theory-section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.theory-section ul {
+    padding-left: 1.5rem;
+}
+
+.theory-section code {
+    background: var(--background-light);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: "Courier New", monospace;
+    color: var(--primary-color);
+}
+
+.theory-section pre {
+    background: var(--background-light);
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: "Courier New", monospace;
+    color: var(--primary-color);
+}
+
+/* Editor de código */
+.practice-section {
+    background: var(--text-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.practice-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.code-editor-container {
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.CodeMirror {
+    height: 300px;
+    font-family: "Courier New", monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 6px;
+}
+
+/* Botón de ejecutar código */
+.run-code-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--accent-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background var(--transition-speed) ease;
+}
+
+.run-code-btn:hover {
+    background: #45a049;
+}
+
+/* Área de resultados */
+.output-container {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: var(--background-light);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.output-container h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.output-container pre {
+    font-family: "Courier New", monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--primary-color);
+    white-space: pre-wrap;
+}
+
+/* Footer de la lección */
+.lesson-footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: var(--text-light);
+    margin-top: 2rem;
+}
+
+.lesson-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* css/lecciones.css */
+
+/* Estilos para el botón "Terminar Módulo" */
+#finish-module-btn {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--transition-speed) ease;
+}
+
+#finish-module-btn:hover {
+    background-color: #45a049; /* Verde más oscuro al hacer hover */
+}
+
+/* css/lecciones.css */
+
+/* Contenedor del botón "Finalizar Lección" */
+.finish-lesson-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Estilos para el botón "Finalizar Lección" */
+.finish-lesson-btn {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color var(--transition-speed) ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.finish-lesson-btn:hover {
+    background-color: #45a049; /* Verde más oscuro al hacer hover */
+}

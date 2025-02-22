@@ -1,0 +1,93 @@
+Raíz del Proyecto (curso-javascript/)
+
+Contiene los archivos y carpetas principales del curso.
+
+index.html → Página principal del curso. Puede ser una landing page con el temario, enlaces a las lecciones y recursos.
+
+
+assets/ (Recursos estáticos)
+
+Contiene archivos multimedia y otros elementos visuales.
+
+img/ → Imágenes del curso, como diagramas, íconos o capturas de pantalla.
+
+fonts/ → Fuentes personalizadas usadas en el diseño del curso.
+
+pdf/ → Guías descargables, como resúmenes o cheatsheets en PDF.
+
+
+css/ (Hojas de estilo)
+
+Define la apariencia del curso.
+
+main.css → Estilos globales aplicados a todo el curso.
+
+lecciones.css → Estilos específicos para el contenido de las lecciones.
+
+responsive.css → Estilos adaptativos (media queries) para móviles.
+
+
+js/ (Código JavaScript)
+
+Maneja la lógica del curso y la interactividad.
+
+app.js → Código principal, como manejo de usuarios, progreso del curso, almacenamiento en localStorage, etc.
+
+lecciones/ → Contiene scripts específicos para cada lección (por ejemplo, leccion1.js puede incluir ejemplos o ejercicios interactivos).
+
+vendor/ → Librerías externas como CodeMirror (para resaltar código en vivo), Bootstrap JS, etc.
+
+
+lecciones/ (Contenido educativo)
+
+Aquí se organizan las lecciones en módulos.
+
+modulo1-fundamentos/ → Contiene archivos HTML de las primeras lecciones, como variables, funciones, etc.
+
+1-variables.html → Explicación sobre variables en JS.
+
+2-funciones.html → Explicación sobre funciones.
+
+
+modulo2-dom/ → Contiene lecciones sobre manipulación del DOM en JavaScript.
+
+
+ejercicios/ (Desafíos prácticos)
+
+Espacio para la práctica de los estudiantes.
+
+ejercicio1/ → Carpeta de un ejercicio específico.
+
+enunciado.md → Descripción del problema a resolver.
+
+solucion.js → Código de solución propuesto.
+
+
+
+proyectos/ (Proyectos prácticos integradores)
+
+Aquí se incluyen proyectos que combinan conocimientos de varias lecciones.
+
+calculadora/ → Proyecto de una calculadora en JavaScript.
+
+(Otros proyectos similares)
+
+
+recursos/ (Material adicional)
+
+Ayuda a reforzar el aprendizaje con material externo.
+
+libros/ → PDFs o referencias a libros de JavaScript.
+
+enlaces-utiles.md → Lista de sitios recomendados, como documentación oficial, tutoriales y blogs.
+
+herramientas.md → Software útil para programar en JavaScript (ej: VS Code, extensiones, linters).
+
+
+admin/ (Administración y configuración)
+
+Información administrativa del curso.
+
+terms.html → Términos y condiciones del curso.
+
+contacto.html → Página de contacto o soporte para estudiantes.

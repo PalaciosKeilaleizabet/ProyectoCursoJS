@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Lección 2: Variables y Constantes - Curso Maestro de JavaScript
+        </title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../../css/main.css" />
+        <link rel="stylesheet" href="../../css/lecciones.css" />
+        <link rel="stylesheet" href="../../css/responsive-lecciones.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/theme/dracula.min.css"
+        />
+    </head>
+    <body>
+        <!-- Header de la lección -->
+        <header class="lesson-header">
+            <div class="header-content">
+                <h1 class="lesson-title">
+                    <i class="fab fa-js"></i> Lección 2: Variables y Constantes
+                </h1>
+                <div class="lesson-navigation">
+                    <a href="1-sintaxis.html" class="nav-button">
+                        <i class="fas fa-arrow-left"></i> Lección Anterior
+                    </a>
+                    <a
+                        href="3-tipos-primitivos.html"
+                        class="nav-button"
+                        id="next-lesson-btn"
+                    >
+                        Siguiente Lección <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="../../index.html" class="nav-button">
+                        <i class="fas fa-home"></i> Volver al Inicio
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contenido principal de la lección -->
+        <main class="lesson-content">
+            <section class="theory-section">
+                <h2>Introducción a Variables y Constantes</h2>
+                <p>
+                    En JavaScript, las variables y constantes se utilizan para
+                    almacenar datos. Las variables pueden cambiar su valor,
+                    mientras que las constantes no.
+                </p>
+                <h3>Declaración de Variables</h3>
+                <ul>
+                    <li>
+                        <strong><code>let</code>:</strong> Declara una variable
+                        que puede cambiar su valor.
+                    </li>
+                    <li>
+                        <strong><code>const</code>:</strong> Declara una
+                        constante cuyo valor no puede cambiar.
+                    </li>
+                    <li>
+                        <strong><code>var</code>:</strong> Declara una variable
+                        con ámbito de función (no recomendado en código
+                        moderno).
+                    </li>
+                </ul>
+                <h3>Ejemplo de Código</h3>
+                <pre id="code-example">
+// Declaración de variables
+let nombre = "Juan";
+const edad = 25;
+
+// Reasignación de variables
+nombre = "Carlos"; // Correcto
+// edad = 30; // Error: No se puede reasignar una constante
+
+console.log(nombre); // Imprime "Carlos"
+console.log(edad);   // Imprime 25
+            </pre
+                >
+            </section>
+
+            <!-- Editor de código interactivo -->
+            <section class="practice-section">
+                <h2>Practica lo que aprendiste</h2>
+                <div class="code-editor-container">
+                    <textarea id="code-editor"></textarea>
+                </div>
+                <button class="run-code-btn" id="run-code-btn">
+                    <i class="fas fa-play"></i> Ejecutar Código
+                </button>
+                <div class="output-container">
+                    <h3>Resultado:</h3>
+                    <pre id="output"></pre>
+                </div>
+            </section>
+            <!-- Botón "Finalizar Lección" -->
+            <div class="finish-lesson-container">
+                <button class="finish-lesson-btn" id="finish-lesson-btn">
+                    <i class="fas fa-check"></i> Finalizar Lección
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer de la lección -->
+        <footer class="lesson-footer">
+            <p>
+                © 2023 Curso Maestro de JavaScript. Todos los derechos
+                reservados.
+            </p>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/mode/javascript/javascript.min.js"></script>
+        <script src="../../js/codeMirror.js"></script>
+        <script src="../../js/lecciones/modulo1/leccion2.js"></script>
+    </body>
+</html>

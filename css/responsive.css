@@ -1,0 +1,152 @@
+/* css/responsive.css */
+
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+    .course-title {
+        font-size: 2rem;
+    }
+
+    .stat-item {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .modules-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .module-title {
+        font-size: 1.1rem;
+    }
+
+    .start-module-btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* Móvil Grande: 481px - 767px */
+@media (max-width: 767px) {
+    .course-header {
+        padding: 2rem 1rem;
+    }
+
+    .course-title {
+        font-size: 1.8rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .course-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .stat-item {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+
+    .global-progress {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .progress-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .modules-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .module-card {
+        padding: 1rem;
+    }
+
+    .module-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+}
+
+/* Móvil Pequeño: <= 480px */
+@media (max-width: 480px) {
+    .course-title {
+        font-size: 1.5rem;
+    }
+
+    .course-title .fab {
+        font-size: 1.8rem;
+    }
+
+    .header-content {
+        padding: 1rem;
+    }
+
+    .global-progress {
+        border-radius: 8px;
+    }
+
+    .progress-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .progress-percent {
+        font-size: 0.9rem;
+    }
+
+    .module-title {
+        font-size: 1rem;
+    }
+
+    .module-status {
+        font-size: 0.8rem;
+    }
+
+    .start-module-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .mobile-nav {
+        padding: 0.8rem;
+    }
+
+    .nav-item {
+        font-size: 0.8rem;
+    }
+
+    .nav-item i {
+        font-size: 1rem;
+    }
+}
+
+/* Orientación Horizontal */
+@media (max-height: 500px) and (orientation: landscape) {
+    .course-header {
+        padding: 1.5rem;
+    }
+
+    .course-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .modules-container {
+        margin: 1rem auto;
+    }
+
+    .module-card {
+        padding: 1rem;
+    }
+}
